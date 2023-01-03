@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:black;
+    
+}
+:root{
+    --bg:#fba31e;
+    --sbg:#e0e5eb;
+    font-size: 62%;
+}
+.header{
+    height: 7rem;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4rem;
+    font-size: 2.5rem;
+}
+.hero{
+    height: 100vh;
+    /* background-color: var(--sbg); */
+    position: relative;
+    /* border: 1px solid ; */
+    
+}
+
+
+
+
+.bgdesigh , .bgdesign2 {
+    position: absolute;
+    width: 50rem;
+    z-index: -2;
+    
+    /* border: 1px solid; */
+}
+.bgdesigh{
+    top: -30px;
+    right: 90px;
+}
+.bgdesign2 {
+    bottom: -30px;
+    left: 20px;
+}
+
+.left , .right {
+    width: 45%;
+    height: 60vh;
+    transition: all .3s linear;
+    /* transform-origin: top left; */
+    /* border: 1px solid; */
+    box-shadow: 4px 70px 31px -38px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 70px 31px -38px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 70px 31px -38px rgba(0,0,0,0.75);
+}
+.heromain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+}
+.right{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background.jpg");
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    color: white;
+    background-color: #fba31e;
+}
+.left p{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+.left h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+.left:hover , .right:hover{
+    filter:  brightness(115%);
+    transform: rotateZ(10deg);
+}
+
+.amazing{
+    display: flex;
+    height: 90vh;
+    background-color: var(--sbg);
+    /* justify-content:space-evenly; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 6rem;
+    /* border: 1px solid; */
+    z-index: -5;
+}
+.svg{
+    position: absolute;
+    /* border: 1px solid; */
+    z-index: -3;
+    top: 40px;
+    width: 60rem;
+    animation: animate 5s linear  infinite alternate;
+}
+@keyframes animate {
+    100%{
+        transform: translateX(70PX);
+    }
+    
+}
+.amazing h2{
+    font-size: 3.7rem
+}
+
+.amazing p{
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 10rem
+}
+button{position: relative;
+    border: none;
+    background-color: #fba31e;
+    color: white;
+    padding: 1rem 2rem;
+    transition: all .3s linear;
+    
+
+}
+button:hover{
+    color: black;
+}
+.workarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/black-brick-wall-textured-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+    
+}
+.workarea h2{
+    font-size: 3.4rem;
+    color: white;
+}
+.cardarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+    margin: 1rem;
+}
+.card{
+    background-color: #e0e5eb;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+ 
